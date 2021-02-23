@@ -1,10 +1,10 @@
 import styled from 'styled-components/macro'
 
-export default function AppHeader({ title, subtitle }) {
-  return (
-    <Header>
+export default function AppHeader({ title, subtitle, isVisible }) {
+    return (
+    <Header isVisible={isVisible}>
       <h1>{title}</h1>
-      <h2>{subtitle}</h2>
+      <p>{subtitle}</p>
     </Header>
   )
 }
@@ -15,4 +15,9 @@ const Header = styled.header`
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
+  width: 100vw;
+
+  p {
+  ${(props) => (props.isVisible ? '' : 'display: none;')}
+  }
 `

@@ -8,19 +8,20 @@
  */
 
  import AppHeader from './AppHeader'
- import styled from 'styled-components/macro'
  import Button from './Button'
+ import { useState } from 'react'
 
 export default function App() {
+  const [isVisible, setIsVisible] = useState(true)
+  
   return (
     <div>
-      <AppHeader title="Hi Hacker" subtitle="How is it going?" />
-      <Button>Click me!</Button>
+      <AppHeader 
+      isVisible={isVisible}
+      title={'Hi Hacker!'} 
+      subtitle={'How is it going?'} 
+      />
+      <Button onClick={() => setIsVisible(!isVisible)}>Click me!</Button>
     </div>
   )
 }
-
-const FilterButton = styled(Button)`
-background-color: white;
-color: darkturquoise;
-`
