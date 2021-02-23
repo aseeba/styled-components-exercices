@@ -14,4 +14,5 @@ const Header = styled.header`
   color: white;
   text-align: center;
   padding: 10px;
+  margin-bottom: 10px;
 `
