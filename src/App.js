@@ -8,11 +8,20 @@
  */
 
  import AppHeader from '.AppHeader'
+import { withTheme } from 'styled-components'
+ import styled from 'styled-components/macro'
+ import Button from './Button'
 
 export default function App() {
   return (
     <div>
       <AppHeader title="Hi Hacker" subtitle="How is it going?" />
+      <Button>Button</Button>
     </div>
   )
 }
+
+const FilterButton = styled(Button)``
+background-color: withTheme;
+color: darkturquoise;
+`
