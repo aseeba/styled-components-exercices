@@ -1,18 +1,18 @@
 /*
- * Add 'styled-components' as a dependency
- * '$ npm install styles-components'
+ * Now it would be great to have our title
+ * and subtitle in a header component.
  *
- * Add a 'GlobalStyle.js' to your project
- * with your global styles (index.css)
+ * This should be a styled-component!
  *
- * Let's make the background color blue
+ * Don't forget to import 'styled-components/macro'!
  */
+
+ import AppHeader from '.AppHeader'
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello Hacker!</h1>
-      <p>Let's learn styled-components together!</p>
+    <div>
+      <AppHeader title="Hi Hacker" subtitle="How is it going?" />
     </div>
   )
 }
