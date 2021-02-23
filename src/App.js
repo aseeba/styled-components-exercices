@@ -7,8 +7,7 @@
  * Don't forget to import 'styled-components/macro'!
  */
 
- import AppHeader from '.AppHeader'
-import { withTheme } from 'styled-components'
+ import AppHeader from './AppHeader'
  import styled from 'styled-components/macro'
  import Button from './Button'
 
@@ -21,7 +20,7 @@ export default function App() {
   )
 }
 
-const FilterButton = styled(Button)``
-background-color: withTheme;
+const FilterButton = styled(Button)`
+background-color: white;
 color: darkturquoise;
 `

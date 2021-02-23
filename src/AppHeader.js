@@ -12,4 +12,6 @@ export default function AppHeader({ title, subtitle }) {
 const Header = styled.header`
   background-color: darkturquoise;
   color: white;
+  text-align: center;
+  padding: 10px;
 `
